@@ -160,7 +160,7 @@ In this example, overfitting is seen, slightly in the accuracy plot but more obv
 
 When training is done, this tab will automatically display the confusion matrix, which will show a more detailed view of the performance compared to the overall accuracy.
 
-There is also the possibility of drawing a figure and see if the network can predict what it is. This feature was initialy developed for the MNIST data set (I misunderstood the assignment and thought we could choose data set and that the "fashion MNIST" just was some fancy looking numbers...). However, it is possible to use it with the fashion MNIST, but your drawing skills may be put to test.
+There is also the possibility of drawing a figure and see if the network can predict what it is. This feature was initialy developed for the MNIST data set (it was at first assumed that the "fashion MNIST" just was some fancy looking numbers...). However, it is possible to use it with the fashion MNIST, but your drawing skills may be put to test.
 
 ![](https://github.com/Svanteberg/DeepLearningCourse_UMU/blob/master/Lab1/Images/Results.png)
 
