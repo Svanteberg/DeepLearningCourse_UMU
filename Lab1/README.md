@@ -4,14 +4,14 @@
 
 Since I'm not an experienced programmer and Python is new to me, I took the opportunity to practice and made a GUI for developing convolutional networks. It is implemented in Tkinter. Since developing a flexible GUI; capable of every possible variation of data processing, network architectures and training schemes; is an overwelming task, naturally this GUI will have its limitations.
 
-The GUI is run by
+The GUI is run by typing
 
 ```
   python mnist_project.py
 
 ```
 
-An auxillary script
+in the terminal. An auxillary script
 
 ```
 
