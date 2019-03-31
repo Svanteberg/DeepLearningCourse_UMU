@@ -66,6 +66,67 @@ Any of the loaded data sets can be visualized, with a couple of choices for numb
 
 ### Building the network
 
+The network is always initialized as:
+
+```
+  self.model = Sequential()
+```
+
+The network can then be buildt by adding layers using the "Add layer" button.
+
+Convolutional layer:
+
+```
+  self.model.add(Conv2D(filters=self.convFilterSize.var.get(),
+                   kernel_size=self.convKernelSize.var.get(),
+                   strides=self.convStride.var.get(),
+                   padding=self.convPadding.var.get(),
+                   input_shape=self.data_shape))
+```
+
+Batch normalization layer (no parameter choices):
+
+```
+  self.model.add(BatchNormalization())
+```
+
+Activation layer (ReLU):
+
+```
+
+self.model.add(Activation('relu'))
+```
+
+Max pooling layer (choose stride length):
+
+```
+  self.model.add(MaxPooling2D(pool_size=(self.poolStride.var.get(),self.poolStride.var.get())))
+```
+
+Drop out layer (choose dropout rate):
+
+```
+  self.model.add(Dropout(self.dropDropoutRate.var.get()))
+```
+
+Flattening layer (no choice):
+
+```
+  model.add(Flatten())
+```
+
+Fully connected layer (dense; choise number of nodes, activation preset to ReLU):
+
+```
+  model.add(Dense(self.fullyConnectedNum.var.get(),activation='relu'))
+```
+
+Classification layer (no choice):
+
+```
+  model.add(Dense(self.num_classes,activation='softmax'))
+```
+
 ![](https://github.com/Svanteberg/DeepLearningCourse_UMU/blob/master/Lab1/Images/Network_model.png)
 
 
