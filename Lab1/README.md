@@ -35,7 +35,7 @@ In the GUI there are different tabs for each step in processing, building, train
 
 When training is done, this tab will automatically display the confusion matrix which will show a more detailed view of the performance compared to the overall accuracy.
 
-There is also the possibility to draw a figure and see if the network can predict what it is. This feature was initialy developed for the MNIST data set (I misunderstood the assignment and thought we could choose data set and that the "fashion MNIST" just was some fancy looking letters...). However, it is possible to use it with the fashion MNIST, but your drawing skills may be put to test.
+There is also the possibility to draw a figure and see if the network can predict what it is. This feature was initialy developed for the MNIST data set (I misunderstood the assignment and thought we could choose data set and that the "fashion MNIST" just was some fancy looking numbers...). However, it is possible to use it with the fashion MNIST, but your drawing skills may be put to test.
 
 ![](https://github.com/Svanteberg/DeepLearningCourse_UMU/blob/master/Lab1/Images/Results.png)
 
