@@ -72,9 +72,9 @@ The network is always initialized as:
   self.model = Sequential()
 ```
 
-The network can then be buildt by adding layers using the "Add layer" button. Some of the layers will have choices for different parameters.
+The network can then be buildt by adding layers using the "Add layer" button. The layer type of the active tab will be added. Some of the layers will have choices for different parameters.
 
-Convolutional layer (choose number of filters, kernel size, stride length, padding):
+#### Convolutional layer (choose number of filters, kernel size, stride length, padding):
 
 ```
   self.model.add(Conv2D(filters=self.convFilterSize.var.get(),
@@ -84,13 +84,13 @@ Convolutional layer (choose number of filters, kernel size, stride length, paddi
                    input_shape=self.data_shape))
 ```
 
-Batch normalization layer (no parameter choices):
+#### Batch normalization layer (no parameter choices):
 
 ```
   self.model.add(BatchNormalization())
 ```
 
-Activation layer (ReLU; no parameter choices):
+#### Activation layer (ReLU; no parameter choices):
 
 ```
 
@@ -103,25 +103,25 @@ Max pooling layer (choose stride length):
   self.model.add(MaxPooling2D(pool_size=(self.poolStride.var.get(),self.poolStride.var.get())))
 ```
 
-Drop out layer (choose dropout rate):
+#### Drop out layer (choose dropout rate):
 
 ```
   self.model.add(Dropout(self.dropDropoutRate.var.get()))
 ```
 
-Flattening layer (no parameter choices):
+#### Flattening layer (no parameter choices):
 
 ```
   model.add(Flatten())
 ```
 
-Fully connected layer (dense; choise number of nodes, activation preset to ReLU):
+#### Fully connected layer (dense; choise number of nodes, activation preset to ReLU):
 
 ```
   model.add(Dense(self.fullyConnectedNum.var.get(),activation='relu'))
 ```
 
-Classification layer (no parameter choices):
+#### Classification layer (no parameter choices):
 
 ```
   model.add(Dense(self.num_classes,activation='softmax'))
