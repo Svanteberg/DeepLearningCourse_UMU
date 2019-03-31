@@ -4,6 +4,22 @@
 
 Since I'm not an experienced programmer and Python is new to me, I took the opportunity to practice and made a GUI for developing convolutional networks. It is implemented in Tkinter. Since developing a flexible GUI; capable of every possible variation of data processing, network architectures and training schemes; is an overwelming task, naturally this GUI will have its limitations.
 
+The GUI is run by
+
+```
+  python mnist_project.py
+
+```
+
+An auxillary script
+
+```
+
+mnist_data.py
+```
+
+is necessary for data processing.
+
 At the moment, the GUI can work with both the MNIST and the Fashion MNIST data sets (and any image data set that has been preprocessed correct and have the right format; 28x28 pixels, 1 channel and 10 categories). In the GUI there are different tabs for each step in processing, building, training and evaluating networks:
 
   1. Loading data and creating augmented data (for the MNIST data set there is also the possiblity of generating synthetic data).
