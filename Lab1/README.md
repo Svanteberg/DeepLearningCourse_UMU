@@ -72,7 +72,7 @@ The network is always initialized as:
   self.model = Sequential()
 ```
 
-The network can then be buildt by adding layers using the "Add layer" button. The layer type of the active tab will be added. Some of the layers will have choices for different parameters.
+The network can then be buildt by adding layers using the "Add layer" button. The layer type of the active tab will be added. Some of the layers will have choices for different parameters. The last layer can be deleted by pressing the "Delete layer" button. Pressing the "New network" button will delete the whole network and re-initialize the model.
 
 #### Convolutional layer (choose number of filters, kernel size, stride length, padding):
 
@@ -127,7 +127,7 @@ Max pooling layer (choose stride length):
   self.model.add(Dense(self.num_classes,activation='softmax'))
 ```
 
-Choosing a layer combination that is incompatible will not result in any error message in the GUI, but may be seen in the terminal.
+Choosing a layer combination that is incompatible will not result in any error message in the GUI, but may be seen in the terminal. If trying to proceed and train the network it will not work. If an incompatible layer has been choosen, it may be that the whole model needs to be re-initialized (by pressing the "New network" button).
 
 ![](https://github.com/Svanteberg/DeepLearningCourse_UMU/blob/master/Lab1/Images/Network_model.png)
 
