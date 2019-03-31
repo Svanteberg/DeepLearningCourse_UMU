@@ -96,10 +96,18 @@ In the GUI, when displaying the activations of a layer, the image is choosen at 
 
 In this example there are four convolutional layers. For the first layer, it is possible to somewhat understand what it does and it seem to mainly detect edges of different orientations. As one progress toward higher layers the features become more abstract and harder to decipher.
 
+#### First convolutional layer
+
 ![](https://github.com/Svanteberg/DeepLearningCourse_UMU/blob/master/Lab1/Images/Activation_0.png)
+
+#### Second convolutional layer
 
 ![](https://github.com/Svanteberg/DeepLearningCourse_UMU/blob/master/Lab1/Images/Activation_1.png)
 
+#### Third convolutional layer
+
 ![](https://github.com/Svanteberg/DeepLearningCourse_UMU/blob/master/Lab1/Images/Activation_2.png)
+
+#### Fourth convolutional layer
 
 ![](https://github.com/Svanteberg/DeepLearningCourse_UMU/blob/master/Lab1/Images/Activation_3.png)
