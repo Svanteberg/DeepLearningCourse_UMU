@@ -1,4 +1,4 @@
-# Laboration 1 - Using convolutional network for classification of the Fashion MNIST data set.
+# Laboration 1 - Using convolutional networks for the classification of the Fashion MNIST data set.
 
 Since I'm not an experienced programmer and Python is new to me, I took the opportunity to practice and made a GUI for developing convolutional networks. It is implemented in Tkinter. Since developing a flexible GUI; capable of every possible variation of data processing, network architectures and training schemes; is an overwelming task, naturally this GUI will have its limitations.
 
