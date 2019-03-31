@@ -11,7 +11,33 @@ At the moment, the GUI can work with both the MNIST and the Fashion MNIST data s
   5. Evaluation of the network by confusion matrix and testing prediction capability of manually drawn figures.
   6. Visualization of the activations.
 
+Below is an illustration of the GUI, using an example of training a network.
+
 ### Loading data and creating augmented/synthetic data
+
+The MNIST and the Fashion MNIST data sets have to be preprocessed and saved in the right way before starting using the GUI. This can be done with the class "createData" in "mnist_data.py". For the Fashion MNIST data set:
+
+  fashion_mnist = createData()
+  fashion_mnist.loadFashionMNIST()
+  fashion_mnist.prepareData()
+  fashion_mnist.saveFashionMNIST()
+ 
+and for the MNIST data set:
+
+  mnist = createData()
+  mnist.loadMNIST()
+  mnist.prepareData()
+  mnist.saveMNIST()
+  
+It is also possible to augment the data:
+
+  fashion_mnist.augmentDataSet(Number_of_examples_for_training,Number_of_examples_for_testing)
+  fashion_mnist.saveAugData()
+  
+and
+
+  mnist.augmentDataSet(Number_of_examples_for_training,Number_of_examples_for_testing)
+  mnist.saveAugData()
 
 ![](https://github.com/Svanteberg/DeepLearningCourse_UMU/blob/master/Lab1/Images/Data_management.png)
 
