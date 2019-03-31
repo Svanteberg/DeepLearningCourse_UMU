@@ -59,7 +59,7 @@ It is also possible to generate augmented data from either the MNIST or the Fash
 
 ### Visualizing the data
 
-Any of the loaded data sets can be visualized, with a couple of choices for number of displayed images and the images choosen randomly.
+Any of the loaded data sets can be visualized, with a couple of choices for number of displayed images and the images are choosen randomly.
 
 ![](https://github.com/Svanteberg/DeepLearningCourse_UMU/blob/master/Lab1/Images/Data_visualization.png)
 
