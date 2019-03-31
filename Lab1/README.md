@@ -13,7 +13,7 @@ At the moment, the GUI can work with both the MNIST and the Fashion MNIST data s
 
 Below is an illustration of the GUI, using an example of training a network.
 
-### Loading data and creating augmented/synthetic data
+### Preparing data before starting using the GUI
 
 The MNIST and the Fashion MNIST data sets have to be preprocessed and saved in the right way before starting using the GUI. This can be done with the class "createData" in "mnist_data.py". For the Fashion MNIST data set:
 
@@ -46,6 +46,12 @@ and
   mnist.augmentDataSet(number_of_examples_for_training,number_of_examples_for_testing)
   mnist.saveAugData()
   ```
+  
+### Loading data and creating augmented/synthetic data
+
+The MNIST data set will load automatically when starting the application. Other saved data sets can be loaded manually by clicking on the "Load" button and choosing data file from the file dialog.
+
+It is also possible to generate augmented data from either the MNIST or the Fashion MNIST data set and choosing the number of examples of the training and testing batch. For the MNIST, there is the alternative of generating synthetic data, which is created from a couple of different fonts that are given a further variation by translations, rotations and changing font size.
 
 ![](https://github.com/Svanteberg/DeepLearningCourse_UMU/blob/master/Lab1/Images/Data_management.png)
 
