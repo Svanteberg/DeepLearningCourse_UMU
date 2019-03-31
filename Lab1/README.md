@@ -111,8 +111,7 @@ The network can then be built by adding layers using the "Add layer" button. The
 #### Activation layer (ReLU; no parameter choices):
 
 ```
-
-self.model.add(Activation('relu'))
+  self.model.add(Activation('relu'))
 ```
 
 Max pooling layer (choose stride length):
