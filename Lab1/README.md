@@ -1,10 +1,10 @@
 # Laboration 1 - Using convolutional network for classification of the Fashion MNIST data set.
 
-Since I'm not an experienced programmer and Python is new to me, I took the oppurtunity to practice and made a GUI for developing convolutional networks. It is implemented in Tkinter. Since developing a flexible GUI, capable of every possible variation of data processing, network architectures and trainging schemes, is a large task, naturally this GUI will have it's limitations.
+Since I'm not an experienced programmer and Python is new to me, I took the oppurtunity to practice and made a GUI for developing convolutional networks. It is implemented in Tkinter. Since developing a flexible GUI; capable of every possible variation of data processing, network architectures and training schemes; is an overwelming task, naturally this GUI will have it's limitations.
 
 In the GUI there are different tabs for each step in processing, building, training and evaluating networks:
 
-  1. Loading data and creating augmented data (for the MNIST data set there is also the possiblity of genereating synthetic data).
+  1. Loading data and creating augmented data (for the MNIST data set there is also the possiblity of generating synthetic data).
   2. Visualizing the data
   3. Building a network
   4. Training the network, with the option of performing transfer learning.
@@ -32,6 +32,10 @@ In the GUI there are different tabs for each step in processing, building, train
 
 
 ### Network evaluation
+
+When training is done, this tab will automatically display the confusion matrix which will show a more detailed view of the performance compared to the overall accuarcy.
+
+There is also the possibility to draw a figure and see if the network can predict what it is. This feature was initialy developed for the MNIST data set (I misunderstood the assignment and thought we could choose data set and that the "fashion MNIST" just was some fancy looking letters...). However, it is possible to use it with the fashion MNIST, but your drawing skills may be put to test.
 
 ![](https://github.com/Svanteberg/DeepLearningCourse_UMU/blob/master/Lab1/Images/Results.png)
 
