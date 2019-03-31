@@ -24,7 +24,7 @@ The MNIST and the Fashion MNIST data sets have to be preprocessed and saved in t
   fashion_mnist.saveFashionMNIST()
   ```
  
-which saves the data in the file "fashion_mnist_data.npz". And for the MNIST data set:
+which saves the data in the file "fashion_mnist_data.npz" in the current folder. And for the MNIST data set:
 
   ```
   mnist = createData()
@@ -33,7 +33,7 @@ which saves the data in the file "fashion_mnist_data.npz". And for the MNIST dat
   mnist.saveMNIST()
   ```
   
-which saves the data in the file "mnist_data.npz". It is also possible to augment the data:
+which saves the data in the file "mnist_data.npz" in the current folder. It is also possible to augment the data:
 
   ```
   fashion_mnist.augmentDataSet(number_of_examples_for_training,number_of_examples_for_testing)
@@ -46,7 +46,7 @@ and
   mnist.augmentDataSet(number_of_examples_for_training,number_of_examples_for_testing)
   mnist.saveAugData()
   ```
-where the data is saved in as a npz-file with a name specified through a file dialog window. 
+where the data is saved as an npz-file with a name specified through a file dialog window. 
 
 ### Loading data and creating augmented/synthetic data
 
