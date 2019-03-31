@@ -151,6 +151,7 @@ Choosing a layer combination that is incompatible will not result in any error m
 
 ![](https://github.com/Svanteberg/DeepLearningCourse_UMU/blob/master/Lab1/Images/Network_model.png)
 
+The model above has four convolutional layers. Each convolutional layer is followed by an activation layer, to introduce nonlinearities, which in turn is followed by a batch normalization layer to prevent values from diverging to much. All this is followed by a flattening layer to reshape the output to match a fully connected layer. The final part of the model consists of a fully connected layer with a softmax activation which will give a probability for each category.
 
 ### Tab 3 - Training the network
 
