@@ -1,3 +1,3 @@
 ### Laboration 1 - Using convolutional network for classification of the Fashion MNIST data set.
 
-![Data_management](DeepLearningCourse_UMU/Data_management.png)
+![](DeepLearningCourse_UMU/Lab1/Images/Data_management.png)
