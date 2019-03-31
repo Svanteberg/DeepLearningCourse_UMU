@@ -150,7 +150,7 @@ As mentioned above, a network can be continued to train after training for the s
 
 ![](https://github.com/Svanteberg/DeepLearningCourse_UMU/blob/master/Lab1/Images/Training.png)
 
-In this example, overfitting is seen, slightly in the accuracy plot but more obvious in the loss plot. An early stop at epoch two may be suitable.
+In this example, overfitting is seen, slightly in the accuracy plot but more obvious in the loss plot. An early stop at epoch two (epoch zero being the first) may be suitable.
 
 ### Network evaluation
 
