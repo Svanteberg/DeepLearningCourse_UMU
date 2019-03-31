@@ -112,19 +112,19 @@ Max pooling layer (choose stride length):
 #### Flattening layer (no parameter choices):
 
 ```
-  model.add(Flatten())
+  self.model.add(Flatten())
 ```
 
 #### Fully connected layer (dense; choise number of nodes, activation preset to ReLU):
 
 ```
-  model.add(Dense(self.fullyConnectedNum.var.get(),activation='relu'))
+  self.model.add(Dense(self.fullyConnectedNum.var.get(),activation='relu'))
 ```
 
 #### Classification layer (no parameter choices):
 
 ```
-  model.add(Dense(self.num_classes,activation='softmax'))
+  self.model.add(Dense(self.num_classes,activation='softmax'))
 ```
 
 Choosing a layer combination that is incompatible will not result in any error message in the GUI, but may be seen in the terminal.
