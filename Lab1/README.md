@@ -8,13 +8,11 @@ The GUI is run by typing
 
 ```
   python mnist_project.py
-
 ```
 
 in the terminal. An auxillary script
 
 ```
-
 mnist_data.py
 ```
 
