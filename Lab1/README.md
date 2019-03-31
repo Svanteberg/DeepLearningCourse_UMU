@@ -72,7 +72,7 @@ The network is always initialized as:
   self.model = Sequential()
 ```
 
-The network can then be buildt by adding layers using the "Add layer" button. The layer type of the active tab will be added. Some of the layers will have choices for different parameters. The last layer can be deleted by pressing the "Delete layer" button. Pressing the "New network" button will delete the whole network and re-initialize the model.
+The network can then be built by adding layers using the "Add layer" button. The layer type of the active tab will be added. Some of the layers will have choices for different parameters. The last layer can be deleted by pressing the "Delete layer" button. Pressing the "New network" button will delete the whole network and re-initialize the model.
 
 #### Convolutional layer (choose number of filters, kernel size, stride length, padding):
 
