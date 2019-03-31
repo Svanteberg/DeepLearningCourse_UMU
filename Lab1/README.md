@@ -134,7 +134,15 @@ Choosing a layer combination that is incompatible will not result in any error m
 
 ### Training the network
 
-When the network has been built, training can be started by clicking on the "Train" button. If the button is clicked again after finnishing training, the training will continue from were it left off. So to train from start, i.e., with reset weights, the "Reset network" button must be pressed.
+When the network has been built, training can be started by clicking on the "Train" button. This will also result in the compilation of the model before starting training: 
+
+```
+  self.model.compile(loss=tf.keras.losses.categorical_crossentropy,
+                    optimizer=tf.keras.optimizers.Adadelta(),
+                    metrics=['accuracy'])
+```
+
+If the button is clicked again after finnishing training, the training will continue from were it left off. So to train from start, i.e., with reset weights, the "Reset network" button must be pressed.
 
 Training can be performed directly, using the choosen data set to train an untrained network. Or, the network can be pretrained on one data set and then retrained on another data set. When retraining, the training can be applied to the whole network or from a certain layer. It is possible to reuse the layers or to replace them with new untrained layers.
 
