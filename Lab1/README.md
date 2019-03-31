@@ -7,7 +7,7 @@ Since I'm not an experienced programmer and Python is new to me, I took the oppo
 The GUI is run by typing
 
 ```
-  python mnist_project.py
+python mnist_project.py
 ```
 
 in the terminal. An auxillary script
@@ -87,7 +87,7 @@ Any of the loaded data sets can be visualized, with a couple of choices for the 
 The network is always initialized as:
 
 ```
-  self.model = Sequential()
+self.model = Sequential()
 ```
 
 The network can then be built by adding layers using the "Add layer" button. The layer type of the active tab will be added. Some of the layers will have choices for different parameters. The last layer can be deleted by pressing the "Delete layer" button. Pressing the "New network" button will delete the whole network and re-initialize the model.
@@ -95,7 +95,7 @@ The network can then be built by adding layers using the "Add layer" button. The
 #### Convolutional layer (choose number of filters, kernel size, stride length, padding):
 
 ```
-  self.model.add(Conv2D(filters=self.convFilterSize.var.get(),
+self.model.add(Conv2D(filters=self.convFilterSize.var.get(),
                    kernel_size=self.convKernelSize.var.get(),
                    strides=self.convStride.var.get(),
                    padding=self.convPadding.var.get(),
@@ -105,43 +105,43 @@ The network can then be built by adding layers using the "Add layer" button. The
 #### Batch normalization layer (no parameter choices):
 
 ```
-  self.model.add(BatchNormalization())
+self.model.add(BatchNormalization())
 ```
 
 #### Activation layer (ReLU; no parameter choices):
 
 ```
-  self.model.add(Activation('relu'))
+self.model.add(Activation('relu'))
 ```
 
 Max pooling layer (choose stride length):
 
 ```
-  self.model.add(MaxPooling2D(pool_size=(self.poolStride.var.get(),self.poolStride.var.get())))
+self.model.add(MaxPooling2D(pool_size=(self.poolStride.var.get(),self.poolStride.var.get())))
 ```
 
 #### Drop out layer (choose dropout rate):
 
 ```
-  self.model.add(Dropout(self.dropDropoutRate.var.get()))
+self.model.add(Dropout(self.dropDropoutRate.var.get()))
 ```
 
 #### Flattening layer (no parameter choices):
 
 ```
-  self.model.add(Flatten())
+self.model.add(Flatten())
 ```
 
 #### Fully connected layer (dense; choise number of nodes, activation preset to ReLU):
 
 ```
-  self.model.add(Dense(self.fullyConnectedNum.var.get(),activation='relu'))
+self.model.add(Dense(self.fullyConnectedNum.var.get(),activation='relu'))
 ```
 
 #### Classification layer (no parameter choices):
 
 ```
-  self.model.add(Dense(self.num_classes,activation='softmax'))
+self.model.add(Dense(self.num_classes,activation='softmax'))
 ```
 
 Choosing a layer combination that is incompatible will not result in any error message in the GUI, but may be seen in the terminal. If trying to proceed and train the network anyway, it will not work. If an incompatible layer has been choosen, it may be that the whole model needs to be re-initialized (by pressing the "New network" button).
@@ -155,7 +155,7 @@ The model above has four convolutional layers. Each convolutional layer is follo
 When the network has been built, training can be started by clicking on the "Train" button. This will also result in the compilation of the model before starting training: 
 
 ```
-  self.model.compile(loss=tf.keras.losses.categorical_crossentropy,
+self.model.compile(loss=tf.keras.losses.categorical_crossentropy,
                     optimizer=tf.keras.optimizers.Adadelta(),
                     metrics=['accuracy'])
 ```
