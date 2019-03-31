@@ -31,12 +31,12 @@ and for the MNIST data set:
   
 It is also possible to augment the data:
 
-  fashion_mnist.augmentDataSet(Number_of_examples_for_training,Number_of_examples_for_testing)
+  fashion_mnist.augmentDataSet(number_of_examples_for_training,number_of_examples_for_testing)
   fashion_mnist.saveAugData()
   
 and
 
-  mnist.augmentDataSet(Number_of_examples_for_training,Number_of_examples_for_testing)
+  mnist.augmentDataSet(number_of_examples_for_training,number_of_examples_for_testing)
   mnist.saveAugData()
 
 ![](https://github.com/Svanteberg/DeepLearningCourse_UMU/blob/master/Lab1/Images/Data_management.png)
