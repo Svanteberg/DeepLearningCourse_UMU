@@ -13,7 +13,6 @@ At the moment, the GUI can work with both the MNIST and the Fashion MNIST data s
   5. Evaluation of the network by confusion matrix and testing prediction capability of manually drawn figures.
   6. Visualization of the activations.
 
-Below is an illustration of the GUI, using an example of training a network.
 
 ### Preparing data before starting using the GUI
 
