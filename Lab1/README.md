@@ -85,6 +85,10 @@ In this example, when testing the network with drawings, some of the categories 
 
 ### Visualizing the activations
 
+In the GUI, when displaying the activations of a layer, the image is choosen at random. So, for this illustration this will be a bit unpedagogical (it would have been more pedagogical to have the same image, but the reason for randomizing in the GUI is to use different images since how the features appear may depend on the image).
+
+In this example there are four convolutional layers. For the first layer, it is possible to somewhat understand what it does and it seem to mainly detect edges of different orientations. As one progress toward higher layers the features become more abstract and harder to decipher.
+
 ![](https://github.com/Svanteberg/DeepLearningCourse_UMU/blob/master/Lab1/Images/Activation_0.png)
 
 ![](https://github.com/Svanteberg/DeepLearningCourse_UMU/blob/master/Lab1/Images/Activation_1.png)
