@@ -72,9 +72,9 @@ The network is always initialized as:
   self.model = Sequential()
 ```
 
-The network can then be buildt by adding layers using the "Add layer" button.
+The network can then be buildt by adding layers using the "Add layer" button. Some of the layers will have choices for different parameters.
 
-Convolutional layer:
+Convolutional layer (choose number of filters, kernel size, stride length, padding):
 
 ```
   self.model.add(Conv2D(filters=self.convFilterSize.var.get(),
@@ -126,6 +126,8 @@ Classification layer (no choice):
 ```
   model.add(Dense(self.num_classes,activation='softmax'))
 ```
+
+Choosing a layer combination that is incompatible will not result in any error message in the GUI, but may be seen in the terminal.
 
 ![](https://github.com/Svanteberg/DeepLearningCourse_UMU/blob/master/Lab1/Images/Network_model.png)
 
