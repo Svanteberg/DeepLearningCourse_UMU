@@ -90,7 +90,7 @@ Batch normalization layer (no parameter choices):
   self.model.add(BatchNormalization())
 ```
 
-Activation layer (ReLU):
+Activation layer (ReLU; no parameter choices):
 
 ```
 
@@ -109,7 +109,7 @@ Drop out layer (choose dropout rate):
   self.model.add(Dropout(self.dropDropoutRate.var.get()))
 ```
 
-Flattening layer (no choice):
+Flattening layer (no parameter choices):
 
 ```
   model.add(Flatten())
@@ -121,7 +121,7 @@ Fully connected layer (dense; choise number of nodes, activation preset to ReLU)
   model.add(Dense(self.fullyConnectedNum.var.get(),activation='relu'))
 ```
 
-Classification layer (no choice):
+Classification layer (no parameter choices):
 
 ```
   model.add(Dense(self.num_classes,activation='softmax'))
