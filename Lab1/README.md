@@ -72,7 +72,7 @@ Any of the loaded data sets can be visualized, with a couple of choices for numb
 
 When the network has been built, training can be started by clicking on the "Train" button. If the button is clicked again after finnishing training, the training will continue from were it left off. So to train from start, i.e., with reset weights, the "Reset network" button must be pressed.
 
-Training can be performed directly, using the choosen data set to train an untrained network. Or the network can be pretrained on one data set and then retrained on another data set. When retraining, the training can be applied to the whole network or from a certain layer. It is possible to reuse the layers or to replace them with new untrained layers.
+Training can be performed directly, using the choosen data set to train an untrained network. Or, the network can be pretrained on one data set and then retrained on another data set. When retraining, the training can be applied to the whole network or from a certain layer. It is possible to reuse the layers or to replace them with new untrained layers.
 
 As mentioned above, a network can be continued to train after training for the specified number of epochs, which is accomplished by simply pressing the "Train" button again. So it is possible to train for a number of epochs at a time. It is actually also possible to continue the training with another data set.
 
