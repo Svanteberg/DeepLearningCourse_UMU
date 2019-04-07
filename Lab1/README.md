@@ -203,3 +203,13 @@ In this example there are four convolutional layers. For the first layer, it is 
 #### Fourth convolutional layer
 
 ![](https://github.com/Svanteberg/DeepLearningCourse_UMU/blob/master/Lab1/Images/Activation_3.png)
+
+## Examples
+
+### Number of convolutional layers
+
+### Batchnormalization
+
+### Fully connected layers and dropout
+
+### Using augmented data
