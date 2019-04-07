@@ -212,6 +212,6 @@ In this example there are four convolutional layers. For the first layer, it is 
 
 ### Fully connected layers and dropout
 
-![](https://github.com/Svanteberg/DeepLearningCourse_UMU/blob/master/Lab1/Images/FC L2.png)
+![](https://github.com/Svanteberg/DeepLearningCourse_UMU/blob/master/Lab1/Images/FC_L2.png)
 
 ### Using augmented data
