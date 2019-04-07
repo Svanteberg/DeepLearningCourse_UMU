@@ -224,16 +224,18 @@ The effect of the dropout layers on overfitting tendensies is obvious, but it do
 
 ### Using augmented data
 
+Here the `ImageDataGenerator` is used for data augmentation during training.
+
 ```
 self.model.add(Conv2D(filters=128,kernel_size=3,strides=1,padding='same',input_shape=(28,28,1))
 self.model.add(Activation('relu'))
 self.model.add(MaxPooling2D(pool_size=(2,2)))
 
-self.model.add(Conv2D(filters=256,kernel_size=3,strides=1,padding='same',input_shape=(28,28,1))
+self.model.add(Conv2D(filters=256,kernel_size=3,strides=1,padding='same')
 self.model.add(Activation('relu'))
 self.model.add(MaxPooling2D(pool_size=(2,2)))
 
-self.model.add(Conv2D(filters=512,kernel_size=3,strides=1,padding='same',input_shape=(28,28,1))
+self.model.add(Conv2D(filters=512,kernel_size=3,strides=1,padding='same')
 self.model.add(Activation('relu'))
 self.model.add(MaxPooling2D(pool_size=(2,2)))
 
@@ -250,7 +252,7 @@ self.model.add(Dense(1024,activation='relu'))
 self.model.add(Dense(self.num_classes,activation='softmax'))
 ```
 
-The `ImageDataGenerator` is set
+The `ImageDataGenerator` is set as:
 
 ```
 rotation_range=12,
