@@ -220,6 +220,6 @@ Network with four fully connected layers (all have 128 nodes). To the left with 
 
 ![](https://github.com/Svanteberg/DeepLearningCourse_UMU/blob/master/Lab1/Images/FC_4L.png)
 
-The effect on overfitting tendensies of the dropout layers is obvious, but it doesn't always give a better validation accuracy.
+The effect of the dropout layers on overfitting tendensies is obvious, but it doesn't always give a better validation accuracy.
 
 ### Using augmented data
