@@ -266,3 +266,7 @@ horizontal_flip=True)
 ```
 
 ![](https://github.com/Svanteberg/DeepLearningCourse_UMU/blob/master/Lab1/Images/Aug_CNN_FCx3.png)
+
+Without data augmentation there is an overfitting seen relatively early during training, demonstrating that the augmentation allows for longer training sessions.
+
+![](https://github.com/Svanteberg/DeepLearningCourse_UMU/blob/master/Lab1/Images/No_aug_CNN_FCx3.png)
