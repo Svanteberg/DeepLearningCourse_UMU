@@ -258,6 +258,6 @@ shear_range = 7,
 width_shift_range=0.075,
 height_shift_range=0.075,
 horizontal_flip=True)
-
+```
 
 ![](https://github.com/Svanteberg/DeepLearningCourse_UMU/blob/master/Lab1/Images/Aug_CNN_FCx3.png)
