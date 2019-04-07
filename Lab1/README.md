@@ -224,7 +224,7 @@ The effect of the dropout layers on overfitting tendensies is obvious, but it do
 
 ### Using augmented data
 
-Here the `ImageDataGenerator` is used for data augmentation during training.
+Here the `ImageDataGenerator` is used for data augmentation during training. The network starts with three blocks each consisting of a convolutional, an activation and a max pooling layer. After a flattening layer, this is followed by three blocks each consisting of a dropout layer set to 0.7 and a fully connected layer with 1024 nodes. The network is finnished with a fully connected classification layer.
 
 ```
 self.model.add(Conv2D(filters=128,kernel_size=3,strides=1,padding='same',input_shape=(28,28,1))
