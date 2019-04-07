@@ -252,7 +252,7 @@ model.add(Dense(1024,activation='relu'))
 model.add(Dropout(0.7))
 model.add(Dense(1024,activation='relu'))
 
-model.add(Dense(self.num_classes,activation='softmax'))
+model.add(Dense(10,activation='softmax'))
 ```
 
 The `ImageDataGenerator` is set as:
