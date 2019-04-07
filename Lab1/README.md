@@ -64,7 +64,7 @@ and
   mnist.augmentDataSet(number_of_examples_for_training,number_of_examples_for_testing)
   mnist.saveAugData()
   ```
-where the data is saved as an npz-file with a name specified through a file dialog window. 
+where the data is saved as an npz-file with a name specified through a file dialog window. This data augmentation haven't worked that well (not much effort have been put into improving the function), so using the `ImageDataGenerator` is recommended.
 
 
 ## The GUI
