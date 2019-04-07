@@ -230,29 +230,29 @@ The effect of the dropout layers on overfitting tendensies is obvious, but it do
 Here the `ImageDataGenerator` is used for data augmentation during training. The network starts with three blocks each consisting of a convolutional, an activation and a max pooling layer. After a flattening layer, this is followed by three blocks each consisting of a dropout layer set to 0.7 and a fully connected layer with 1024 nodes. The network is finnished with a fully connected classification layer.
 
 ```
-self.model.add(Conv2D(filters=128,kernel_size=3,strides=1,padding='same',input_shape=(28,28,1))
-self.model.add(Activation('relu'))
-self.model.add(MaxPooling2D(pool_size=(2,2)))
+model.add(Conv2D(filters=128,kernel_size=3,strides=1,padding='same',input_shape=(28,28,1))
+model.add(Activation('relu'))
+model.add(MaxPooling2D(pool_size=(2,2)))
 
-self.model.add(Conv2D(filters=256,kernel_size=3,strides=1,padding='same')
-self.model.add(Activation('relu'))
-self.model.add(MaxPooling2D(pool_size=(2,2)))
+model.add(Conv2D(filters=256,kernel_size=3,strides=1,padding='same')
+model.add(Activation('relu'))
+model.add(MaxPooling2D(pool_size=(2,2)))
 
-self.model.add(Conv2D(filters=512,kernel_size=3,strides=1,padding='same')
-self.model.add(Activation('relu'))
-self.model.add(MaxPooling2D(pool_size=(2,2)))
+model.add(Conv2D(filters=512,kernel_size=3,strides=1,padding='same')
+model.add(Activation('relu'))
+model.add(MaxPooling2D(pool_size=(2,2)))
 
-self.model.add(Flatten())
-self.model.add(Dropout(0.7))
-self.model.add(Dense(1024,activation='relu'))
+model.add(Flatten())
+model.add(Dropout(0.7))
+model.add(Dense(1024,activation='relu'))
 
-self.model.add(Dropout(0.7))
-self.model.add(Dense(1024,activation='relu'))
+model.add(Dropout(0.7))
+model.add(Dense(1024,activation='relu'))
 
-self.model.add(Dropout(0.7))
-self.model.add(Dense(1024,activation='relu'))
+model.add(Dropout(0.7))
+model.add(Dense(1024,activation='relu'))
 
-self.model.add(Dense(self.num_classes,activation='softmax'))
+model.add(Dense(self.num_classes,activation='softmax'))
 ```
 
 The `ImageDataGenerator` is set as:
