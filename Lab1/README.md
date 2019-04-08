@@ -277,6 +277,6 @@ As seen below, using data augmentation allows for much longer training duration 
 
 ![](https://github.com/Svanteberg/DeepLearningCourse_UMU/blob/master/Lab1/Images/Aug_CNN_FCx3.png)
 
-Being less genereous with filters and nodes will reduce the overfitting all together (number of filters being 32, 64, 128 and number of nodes 512 with dropout of 0.6):
+Being less generous with filters and nodes will reduce the overfitting all together (number of filters being 32, 64, 128 and number of nodes 512 with dropout of 0.6):
 
 ![](https://github.com/Svanteberg/DeepLearningCourse_UMU/blob/master/Lab1/Images/Aug_CNN_FCx3_min.png)
