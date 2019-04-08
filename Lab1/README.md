@@ -265,10 +265,12 @@ height_shift_range=0.075,
 horizontal_flip=True)
 ```
 
-The result is seen in the figure below.
+Without data augmentation there is an overfitting seen relatively early during training (figure below).
+
+![](https://github.com/Svanteberg/DeepLearningCourse_UMU/blob/master/Lab1/Images/No_aug_CNN_FCx3.png)
+
+As seen below, using data augmentation allows for much longer training duration before overfitting is seen and the overfitting is not that prominent.
 
 ![](https://github.com/Svanteberg/DeepLearningCourse_UMU/blob/master/Lab1/Images/Aug_CNN_FCx3.png)
 
-Without data augmentation there is an overfitting seen relatively early during training (figure below), demonstrating that the augmentation allows for longer training sessions.
 
-![](https://github.com/Svanteberg/DeepLearningCourse_UMU/blob/master/Lab1/Images/No_aug_CNN_FCx3.png)
