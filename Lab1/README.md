@@ -69,7 +69,7 @@ where the data is saved as an npz-file with a name specified through a file dial
 
 ## The GUI
 
-Since the GUI been a project under development, some additions (hopefully improvements) resulting in slight difference in apprearance and function may be noticed if downloading and running the most recent code.
+Since the GUI has been a project under development, some additions (hopefully improvements) resulting in a slight difference in apprearance and function may be noticed if downloading and running the most recent code.
 
 ### Tab 0 - Loading data and creating augmented/synthetic data
 
