@@ -73,7 +73,9 @@ where the data is saved as an npz-file with a name specified through a file dial
 
 The Fashion MNIST data set will load automatically when starting the application. Other saved data sets can be loaded manually by clicking on the "Load from file" button and choosing data file from the file dialog.
 
-It is also possible to generate augmented data from either the MNIST or the Fashion MNIST data set and choosing the number of examples of the training and testing batch. For the MNIST, there is the alternative of generating synthetic data, which is created from a couple of different fonts that are given a further variation by translations, rotations and changing font size. (However, there are only a few different fonts and these will be in both training and test data. It is easy to achieve a high accuracy but since both training and test data will be quite similar, it may be hard to know if there is overfitting.)
+It is also possible to generate augmented data from either the MNIST or the Fashion MNIST data set and choosing the number of examples of the training and testing batch. The data is augmented by translations, noise and changing image saturation. As mentioned above, this have not increased performance and need more work (for instastance, the method doesn't randomize the generated data, so there will be a number of augmented versions of the same image grouped together in the data set). The `ImageDataGenerator` is recommended.
+
+For the MNIST, there is the alternative of generating synthetic data, which is created from a couple of different fonts that are given a further variation by translations, rotations and changing font size. (However, there are only a few different fonts and these will be in both training and test data. It is easy to achieve a high accuracy but since both training and test data will be quite similar, it may be hard to know if there is overfitting.)
 
 ![](https://github.com/Svanteberg/DeepLearningCourse_UMU/blob/master/Lab1/Images/Data_management.png)
 
