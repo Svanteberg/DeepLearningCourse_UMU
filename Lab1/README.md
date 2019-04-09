@@ -281,7 +281,7 @@ Being less generous with filters and nodes will reduce the overfitting all toget
 
 ![](https://github.com/Svanteberg/DeepLearningCourse_UMU/blob/master/Lab1/Images/Aug_CNN_FCx3_min.png)
 
-Lastly, after training for 1050 epochs with data augmentation, the use of augmented data was alternated with not using it and continue training of the same network from above. Without it, there was rapid overfitting and with it, it seemed to converge back to the old values.
+Lastly, after training for 1050 epochs with augmentation, the use of augmented data was alternated with not using it and continue training of the same network from above. Without it, there was rapid overfitting and with augmentation, it seemed to converge back to the old values.
 
 ![](https://github.com/Svanteberg/DeepLearningCourse_UMU/blob/master/Lab1/Images/All_time_high.png)
 
