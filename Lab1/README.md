@@ -219,11 +219,11 @@ In this example there are four convolutional layers. For the first layer, it is 
 
 ### Fully connected layers and dropout
 
-Networks with two fully connected layers (512 and 128 nodes). To the left with no dropout layer and to the right with a dropout layer set to 50 percent in between.
+Networks with two fully connected layers (512 and 128 nodes). To the left with no dropout layer and to the right with a dropout layer set to 0.5 in between.
 
 ![](https://github.com/Svanteberg/DeepLearningCourse_UMU/blob/master/Lab1/Images/FC_2L.png)
 
-Networks with four fully connected layers (all have 128 nodes). To the left with no dropout layers and to the right with dropout layers set to 50 percent in between.
+Networks with four fully connected layers (all have 128 nodes). To the left with no dropout layers and to the right with dropout layers set to 0.5 in between.
 
 ![](https://github.com/Svanteberg/DeepLearningCourse_UMU/blob/master/Lab1/Images/FC_4L.png)
 
