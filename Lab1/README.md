@@ -280,3 +280,8 @@ As seen below, using data augmentation allows for much longer training duration 
 Being less generous with filters and nodes will reduce the overfitting all together (number of filters being 32, 64, 128 and number of nodes 512 with dropout of 0.6):
 
 ![](https://github.com/Svanteberg/DeepLearningCourse_UMU/blob/master/Lab1/Images/Aug_CNN_FCx3_min.png)
+
+Lastly, after training for 1050 epochs, the use of augmented data was alternated with not using it and continue training of the same network. Without it, there was rapid overfitting and with it, it seemed to converge back to the old values.
+
+![](https://github.com/Svanteberg/DeepLearningCourse_UMU/blob/master/Lab1/Images/All_time_high.png)
+
