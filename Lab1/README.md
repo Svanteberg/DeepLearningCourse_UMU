@@ -215,6 +215,10 @@ In this example there are four convolutional layers. For the first layer, it is 
 
 ### Number of convolutional layers
 
+Here, three CNN:s were trained having one, two and three convolutional layers, respectievly (left to right). The results are quite similar. Though, looking at the number of parameters, 31450, 8970 and 3610, respectively, we see that having more layers seem to be more efficient.
+
+![](https://github.com/Svanteberg/DeepLearningCourse_UMU/blob/master/Lab1/Images/Number_of_layers_CNN.png)
+
 ### Batchnormalization
 
 ### Fully connected layers and dropout
