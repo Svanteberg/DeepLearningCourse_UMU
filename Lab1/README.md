@@ -217,7 +217,7 @@ In this example there are four convolutional layers. For the first layer, it is 
 
 ### Number of convolutional layers
 
-Here, three CNN:s were trained having one, two and three convolutional layers, respectievly (left to right in the figure below). Each convolutional were followed by a ReLU and maxpooling layer
+Here, three CNN:s were trained having one, two and three convolutional layers, respectievly. Each convolutional were followed by a ReLU and maxpooling layer forming blocks of:
 
 ```
 model.add(Conv2D(filters=16,kernel_size=2,strides=1,padding='same')
@@ -225,7 +225,7 @@ model.add(Activation('relu'))
 model.add(MaxPooling2D(pool_size=(2,2)))
 ```
 
-The results are quite similar. Though, looking at the number of parameters, 31450, 8970 and 3610, respectively, we see that having more layers seem to be more efficient.
+The results are quite similar (the number of convolutional layers increasing from one to three from left to right in the figure below). Though, looking at the number of parameters, 31450, 8970 and 3610, respectively, we see that having more layers seem to be more efficient.
 
 ![](https://github.com/Svanteberg/DeepLearningCourse_UMU/blob/master/Lab1/Images/Number_of_layers_CNN.png)
 
