@@ -23,7 +23,7 @@ At the moment, the GUI can work with both the MNIST and the Fashion MNIST data s
   1. Loading data and creating augmented data (for the MNIST data set there is also the possiblity of generating synthetic data).
   2. Visualizing the data
   3. Building a network
-  4. Training the network, with the option of performing transfer learning.
+  4. Training the network, with the option of performing (a light version of) transfer learning.
   5. Evaluation of the network by confusion matrix and testing prediction capability of manually drawn figures.
   6. Visualization of the activations.
 
@@ -171,7 +171,7 @@ If the button is clicked again after finnishing training, the training will cont
 
 An addition, not shown in the figure below, is a checkbox for using the `ImageDataGenerator` for data augmentation.
 
-Training can be performed directly, using the choosen data set to train an untrained network. Or, the network can be pretrained on one data set and then retrained on another data set. When retraining, the training can be applied to the whole network or from a certain layer. It is possible to reuse the layers or to replace them with new untrained layers.
+Training can be performed directly, using the choosen data set to train an untrained network. Or, the network can be pretrained on one data set and then retrained on another data set. When retraining, the training can be applied to the whole network or from a certain layer. It is possible to reuse the layers or to replace them with new untrained layers. Loading a pretrained network is not possible at the moment.
 
 As mentioned above, a network can be continued to train after training for the specified number of epochs, which is accomplished by simply pressing the "Train" button again. So it is possible to train for a restricted number of epochs at a time. It is actually also possible to continue the training with another data set.
 
