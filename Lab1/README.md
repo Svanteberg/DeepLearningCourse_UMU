@@ -151,7 +151,7 @@ self.model.add(Dense(self.fullyConnectedNum.var.get(),activation='relu'))
 self.model.add(Dense(self.num_classes,activation='softmax'))
 ```
 
-Choosing a layer combination that is incompatible will not result in any error message in the GUI, but may be seen in the terminal. If trying to proceed and train the network anyway, it will not work. If an incompatible layer has been choosen, it may be that the whole model needs to be re-initialized (by pressing the "New network" button).
+Choosing a layer combination that is incompatible will not result in any error message in the GUI, but may be seen in the terminal. If trying to proceed and train the network anyway, it will not work. If an incompatible layer has been choosen, it may be that the whole model needs to be re-initialized (by pressing the "New network" button) and then rebuilding it.
 
 ![](https://github.com/Svanteberg/DeepLearningCourse_UMU/blob/master/Lab1/Images/Network_model.png)
 
