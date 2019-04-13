@@ -31,7 +31,7 @@ Below, is a walk through of the GUI with an example. After that, a couple of var
 
 ### Preparing data before starting using the GUI
 
-In this project, the data set is used as provided with a split in a training and a test set. The test set could be split into a validation set, used during training, and a test set, used to test the final network. But, these two sets probably would not be disjoint, i.e., there could be correlations between them since both would have examples written by the same persons. In a way, since theses data sets have been used so extensively, some form of feedback of what parameters work best to get good result on the test set may exist on a collective level.
+In this project, the data set is used as provided with a split in a training and a test set. The test set could be split into a validation set, used during training, and a test set, used to test the final network. But, these two sets probably would not be disjoint, i.e., there could be correlations between them since both would have examples written by the same persons. *In a way, since theses data sets have been used so extensively, some form of feedback of what parameters work best to get good result on the test set may exist on a collective level resulting in an overfitting...*
 
 The MNIST and the Fashion MNIST data sets have to be preprocessed and saved in the right way before starting using the GUI. This can be done with the class "createData" in "mnist_data.py". For the Fashion MNIST data set:
 
