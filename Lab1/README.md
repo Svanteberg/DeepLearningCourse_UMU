@@ -73,7 +73,7 @@ Since the GUI has been a project under development, some additions (hopefully im
 
 ### Tab 0 - Loading data and creating augmented/synthetic data
 
-The Fashion MNIST data set will load automatically when starting the application. Other saved data sets can be loaded manually by clicking on the "Load from file" button and choosing data file from the file dialog.
+The Fashion MNIST data set will load automatically when starting the application (this will have to be prepared and saved as "fashion_mnist_data.npz"). Other saved data sets can be loaded manually by clicking on the "Load from file" button and choosing data file from the file dialog.
 
 It is also possible to generate augmented data from either the MNIST or the Fashion MNIST data set and choosing the number of examples of the training and testing batch. The data is augmented by translations, adding noise and changing image saturation. As mentioned above, this have not increased performance and need more work (for instance, the method doesn't randomize the generated data, so there will be a number of augmented versions of the same image grouped together in the data set). The `ImageDataGenerator` is recommended.
 
