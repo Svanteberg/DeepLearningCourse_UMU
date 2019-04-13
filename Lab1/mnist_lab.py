@@ -484,7 +484,7 @@ class mnistLab(object):
 
     def plotActivations(self):
 
-        # Adapted from https://github.com/gabrielpierobon/cnnshapes (2019-03-12)
+        # Adapted from https://github.com/gabrielpierobon/cnnshapes (2019-03-30)
         # Function that randomly chooses an image of the test set and allows for visualization of a choosen layer.
         # (It does not display fully connected layers.)
 
