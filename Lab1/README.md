@@ -7,7 +7,7 @@ Since I'm not an experienced programmer and Python is new to me, I took the oppo
 The GUI is run by typing
 
 ```
-python mnist_project.py
+python mnist_lab.py
 ```
 
 in the terminal. An auxillary script
