@@ -231,11 +231,11 @@ The results are quite similar (the number of convolutional layers increasing fro
 
 ### Fully connected layers and dropout
 
-Networks with a fully connected architecture was trained. The first example had two fully connected layers (512 and 128 nodes). The results from training, to the left with no dropout layer and to the right with a dropout layer set to 0.5 in between.
+Networks with a fully connected architecture was trained. The first example had two fully connected layers (512 and 128 nodes). The results from training, to the left with no dropout layer and to the right with a dropout layer set to 0.5 in between:
 
 ![](https://github.com/Svanteberg/DeepLearningCourse_UMU/blob/master/Lab1/Images/FC_2L.png)
 
-Next, networks with four fully connected layers (all have 128 nodes) were built and trained. To the left with no dropout layers and to the right with dropout layers set to 0.5 in between.
+Next, networks with four fully connected layers (all have 128 nodes) were built and trained. To the left with no dropout layers and to the right with dropout layers set to 0.5 in between:
 
 ![](https://github.com/Svanteberg/DeepLearningCourse_UMU/blob/master/Lab1/Images/FC_4L.png)
 
@@ -278,7 +278,7 @@ rotation_range=12,
 shear_range = 7,
 width_shift_range=0.075,
 height_shift_range=0.075,
-horizontal_flip=True)
+horizontal_flip=True
 ```
 
 Without data augmentation there is an overfitting seen relatively early during training (figure below).
